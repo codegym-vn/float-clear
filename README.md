@@ -1,1 +1,1 @@
-[CodeGym](http://codegym.vn) Video Demo Page
+[CodeGym](http://codegym.vn) Float and Clear Demo Page

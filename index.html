@@ -2,39 +2,110 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CodeGym Video Demo Page</title>
+    <title>CodeGym Float and Clear Demo Page</title>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+    <style>
+        .outer {
+            border: solid 1px black;
+            height: 100px;
+            width:500px;
+        }
+        .inner{
+            float: left;
+            height: 80px;
+            width: 200px;
+            background-color: yellow;
+        }
+        .button-left{
+            float:left;
+        }
+        .button-right{
+            float: right;
+        }
+        .clear-block{
+            clear: both;
+        }
+    </style>
 </head>
 <body>
-    <h1>Video Demo Page</h1>
-    <h2>Nhúng file mp4 trong cùng website</h2>
-    <video width="320" height="240" controls>
-        <source src="movie.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <h1>Float and Clear Demo Page</h1>
+    <h2>Thuộc tính float</h2>
+    <div class="outer">
+        <button class="button-left">Float left</button>
+        <button class="button-right">Float right</button>
+        <div class="inner"></div>
+    </div>
+
     <h4>Mã nguồn</h4>
+    <h5>HTML</h5>
     <pre>
         <code class="html hljs">
-            &lt;video width="320" height="240" controls>
-                &lt;source src="movie.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            &lt;/video>
+            &lt;div class="outer">
+                &lt;button class="button-left">Float left</button>
+                &lt;button class="button-right">Float right</button>
+                &lt;div class="inner clear-block"></div>
+            &lt;div>
         </code>
     </pre>
-    <h2>Nhúng file mp4 từ bên ngoài</h2>
-    <video width="320" height="240" controls>
-        <source src="https://www.dropbox.com/s/3z7ruaws6lb092t/movie.mp4?dl=1" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <h5>CSS</h5>
+    <pre>
+        <code class="css hljs">
+            .outer {
+                border: solid 1px black;
+                height: 100px;
+                width:500px;
+            }
+            .button-left{
+                float:left;
+            }
+            .button-right{
+                float: right;
+            }
+        </code>
+    </pre>
+
+    <h2>Thuộc tính clear</h2>
+    <div class="outer">
+        <button class="button-left">Float left</button>
+        <button class="button-right">Float right</button>
+        <div class="inner clear-block"></div>
+    </div>
+
     <h4>Mã nguồn</h4>
+    <h5>HTML</h5>
     <pre>
         <code class="html hljs">
-            &lt;video width="320" height="240" controls>
-                &lt;source src="https://www.dropbox.com/s/3z7ruaws6lb092t/movie.mp4?dl=1" type="video/mp4">
-                Your browser does not support the video tag.
-            &lt;/video>
+            &lt;div class="outer">
+                &lt;button class="button-left">Float left</button>
+                &lt;button class="button-right">Float right</button>
+                &lt;div class="inner clear-block"></div>
+            &lt;div>
+        </code>
+    </pre>
+    <h5>CSS</h5>
+    <pre>
+        <code class="css hljs">.outer {
+            border: solid 1px black;
+            height: 100px;
+            width:500px;
+        }
+        .inner{
+            float: left;
+            height: 80px;
+            width: 200px;
+            background-color: yellow;
+        }
+        .button-left{
+            float:left;
+        }
+        .button-right{
+            float: right;
+        }
+        .clear-block{
+            clear: both;
+        }
         </code>
     </pre>
 
