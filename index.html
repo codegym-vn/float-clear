@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodeGym Audio Demo Page</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+    <h1>Audio Demo Page</h1>
+    <h2>Nhúng file mp3 trong cùng website</h2>
+    <audio controls>
+        <source src="horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <h4>Mã nguồn</h4>
+    <pre>
+        <code class="html hljs">
+            &lt;audio controls>
+                &lt;source src="horse.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            &lt;/audio>
+        </code>
+    </pre>
+    <h2>Nhúng file mp3 từ bên ngoài</h2>
+    <audio controls>
+        <source src="https://www.dropbox.com/s/9vz1i8y8dw3hjk9/horse.mp3?dl=1" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <h4>Mã nguồn</h4>
+    <pre>
+        <code class="html hljs">
+            &lt;audio controls>
+                &lt;source src="https://www.dropbox.com/s/9vz1i8y8dw3hjk9/horse.mp3?dl=1" type="audio/mpeg">
+                Your browser does not support the audio element.
+            &lt;/audio>
+        </code>
+    </pre>
+
+</body>
+</html>
